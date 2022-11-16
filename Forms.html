@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title> Registration Form</title>
+
+    <style>
+        #id101 {
+            color: white;
+            font-size: 45px;
+            text-align: center;
+            font-family: georgia;
+        }
+
+        #id102 {
+            color: white;
+            font-size: 20px;
+            font-family: Verdana;
+        }
+
+        body {
+            background-image: url('img1.jpeg');
+            background-color: rgba(255, 255, 255, 0.2);
+            background-blend-mode: lighten;
+            background-size: cover;
+        }
+
+        h2 {
+            color: white;
+            font-size: 30px;
+            padding: 20px;
+            margin: 30px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        div.main {
+            width: 600px;
+            margin: 50px auto 0px auto;
+        }
+
+        div.register {
+            background-color: rgba(0, 0, 0, 0.5);
+            font-size: 14px;
+            font-family: sans-serif;
+            color: white;
+            border-radius: 10px;
+            border: 1px solid white;
+            box-shadow: 2px;
+            padding: 20px;
+        }
+
+        #register {
+            margin: 40px;
+        }
+
+        #name {
+            width: 300px;
+            border: 1px solid lightsilver;
+            padding: 3px;
+            border-radius: 3px;
+        }
+
+        #submit {
+            width: 150px;
+            font-size: 15px;
+            padding: 3px;
+            margin: 0px 0px 0px 100px;
+            font-family: sans-serif;
+            background-color: lightsilver;
+            border: 1 px solid skyblue;
+            border-radius: 5px;
+        }
+
+        #reset {
+            width: 150px;
+            font-size: 15px;
+            padding: 3px;
+            margin: 0px 0px 0px 0px;
+            font-family: sans-serif;
+            background-color: lightsilver;
+            border: 1 px solid skyblue;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id="id101"> <ins>ABC University</ins></h1>
+
+    <div class="main">
+        <div class="register">
+
+            <form id="register">
+
+                <h2> <ins>Registration Details</ins></h2>
+
+
+                First Name: <input id="name" type="text" name="firstname" placeholder="Enter First Name" size="30px"
+                    required><br><br>
+
+                Last Name: <input id="name" type="text" name="lastname" placeholder="Enter Last Name" size="30px"
+                    required><br><br>
+
+                Email: <input id="name" type="email" name="Email" placeholder="example@gmail.com" size="40px"
+                    required><br><br>
+
+                Contact: <input id="name" type="text" name="Contact" placeholder="Mobile No." maxlength="10"
+                    required><br><br>
+
+                Gender: <input type="radio" name="Gender" value="male"> Male
+                <input type="radio" name="Gender" value="female"> Female
+                <input type="radio" name="Gender" value="other"> Other <br><br>
+
+                DOB: <input type="date" name="DOB" value="DOB"><br><br>
+
+
+                Subjects: <input type="checkbox" value="subject1" name="sub"> Maths
+                <input type="checkbox" value="subject2" name="Science"> Science
+                <input type="checkbox" value="subject3" name="Geography"> Geography
+                <input type="checkbox" value="subject4" name="Social Science"> Social Science
+                <input type="checkbox" value="subject4" name="Hindi"> Hindi <br><br>
+
+                CGPA: <input type="number" name="grades" min="0.0" max="10.0" step="0.5" value="1" required><br><br>
+
+                City: <select name="city">
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Baroda">Baroda</option>
+                    <option value="Gandhinagar">Gandhinagar</option>
+                </select><br><br>
+                Examination Board: <input list="Board" name="Board" placeholder="Board Name">
+                <datalist id="Board">
+                    <option value="">
+                    <option value="GHSEB">
+                    <option value="CBSE">
+                    <option value="ICSE">
+                    <option value="OTHER">
+                </datalist><br><br>
+
+
+                File: <input type="file" name="file" multiple><br><br>
+                Comments: <br><textarea name="comments" rows="4" cols="25"
+                    placeholder="Enter Your comments"></textarea><br><br>
+
+
+                <input id="submit" type="submit" value="Save Data" name="submit">
+                <input id="reset" type="reset">
+                <marquee id="id102" ;>
+                    "Registration will be closed on 31<sup>st</sup> NOV 2022."
+                </marquee>
+        </div>
+        <div>
+            </form>
+
+</body>
+
+</html>
